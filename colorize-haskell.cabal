@@ -7,8 +7,8 @@ maintainer:     iavor.diatchki@gmail.com
 homepage:       http://github.com/yav/colorize-haskell
 build-type:     Simple
 cabal-version:  >= 1.2
-synopsis:       Highligt Haskell source
-description:    Highligt Haskell source
+synopsis:       Highlight Haskell source
+description:    Highlight Haskell source
 category:       Development
 
 library

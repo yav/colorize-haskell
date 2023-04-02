@@ -51,7 +51,7 @@ render how prog k = foldr step k (L.lexerPass0 prog)
 
       _                    -> (x ++)
 
--- | Annotates tokens with ANSI escape sequences, suitable for a dark termianl
+-- | Annotates tokens with ANSI escape sequences, suitable for a dark terminal
 ansiDark :: Style
 ansiDark t = case t of
   Comment        -> bright Cyan
@@ -71,7 +71,7 @@ ansiDark t = case t of
                 ++ xs ++ setSGRCode [Reset] ++ k
 
 
--- | Annotates tokens with ANSI escape sequences, suitable for a dark termianl
+-- | Annotates tokens with ANSI escape sequences, suitable for a dark terminal
 ansiLight :: Style
 ansiLight t = case t of
   Comment        -> dark Blue
@@ -98,8 +98,8 @@ ansiLight t = case t of
 html :: Style
 html = Style
   { comment        = tag "comment"
-  , reserved       = tag "reseved"
-  , reservedOp     = tag "resevedOp"
+  , reserved       = tag "reserved"
+  , reservedOp     = tag "reservedOp"
   , var            = tag "var"
   , varOp          = tag "varOp"
   , con            = tag "con"
